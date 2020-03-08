@@ -13,17 +13,25 @@
 
 	<h1>Braille ASCII Art(점자 아스키 아트)</h1>
 	<p><a href="https://github.com/team1221/Braille-ASCII-Art">GitHub:team1221/Braille-ASCII-Art</a></p>
-
-	<label for="filepicker">이미지:</label>
-	<input type="file" id="filepicker" accept=".png,.jpeg,.jpg">
 	<br>
+	<br>
+	<br>
+	<br>
+
+	<form>
+	<label for="filepicker">[이미지] : </label>
+	<input type="file" id="filepicker" accept=".png,.jpeg,.jpg">
+	</form>
+	<br>
+	
 	<form oninput="result.value=parseInt(threshold.value)">
-	<label for="threshold">색상 임계 값</label>
+	<label for="threshold">[색상 임계 값] : </label>
 	<input type="range" id="threshold" min="0" max="255" value="127">
 	<output name="result" for="threshold">0</output>
 	</form>
 	<br>
-	<label for="width">문자 너비</label>
+	
+	<label for="width">[문자 너비] : </label>
 	<input type="number" id="width" value="100" step="10"> (문자가 500자가 넘을 경우 렉이 발생할 수 있음)
 
 	<div id="output" contenteditable="true"></div>
